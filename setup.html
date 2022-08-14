@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+<body onload="Setup()">
+    <header class="container"><h1>Setup</h1></header>
+
+        <div class="container">
+            <input name="textInput" type="text" maxlength="512" id="textInput" class="" value="Text Label" onchange="setLabelText()" />
+        </div>
+        <div class="container">
+            <input name="aniTypeInput" type="text" maxlength="512" id="aniTypeInput" class="" onchange="setAnimationType()" value="jump" />
+            <span class="badge badge-pill badge-primary" data-toggle="tooltip" data-html="true" data-placement="right" title="Animation types:
+              bounce
+              flash
+              pulse
+              rubberBand
+              shakeX
+              shakeY
+              headShake
+              swing
+              tada
+              wobble
+              jello
+              heartBeat
+              flip">Info</span>
+            <!-- Color Picker not working in OBS browser yet. Using a text input instead for hex color value
+            <input type="color" id="labelColor" name="labelColor" value="#ff0000"><br><br>
+        -->
+        </div>
+
+    <div class="container">
+        <input name="colorInput" type="text" maxlength="7" id="colorInput" value="red" onchange="setColor()"/>
+    </div>
+    <div class="container d-none">
+        <button type="button" class="btn btn-warning" onclick="ResetLocalStorage()">Reset</button>
+
+            <input class="form-check-input" type="checkbox" value="" id="debugToggle" onchange="setDebug()">
+            <label class="form-check-label" for="defaultCheck1">
+                Debug Output
+            </label>
+
+        <!--
+        <button type="button" class="btn btn-primary" onclick="Test()">TEST</button>
+    -->
+    </div>
+
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
