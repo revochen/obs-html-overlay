@@ -9,3 +9,5 @@ How to use:
 
 After any changes made in the setup panel, the main overlay needs to toggle its visibility to reflect any updates.
 
+Any of the animate.js animations may be used and found on https://animate.style/
+
